@@ -1,0 +1,120 @@
+  * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      text-align: center;
+      color: #f45c96;
+      margin-bottom: 2rem;
+    }
+
+.option {
+  display: block;
+  border: 3px solid #FFC0CB;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.option.popular {
+  border: 2px solid #e91e63;
+  background: #fff0f5;
+}
+
+.option input {
+  float: left;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+
+
+    .option .content {
+      margin-left: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .option .badge {
+      background-color: #f45c96;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 5px;
+    }
+
+    .option .price {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .option .strike {
+      text-decoration: line-through;
+      font-size: 12px;
+      color: #aaa;
+      margin-left: 5px;
+    }
+
+    .selectors {
+      margin-top: 1rem;
+    }
+
+    .selectors .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 0.5rem;
+    }
+
+    select {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .total {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #f45c96;
+      text-align: right;
+    }
+
+    .add-to-cart {
+      margin-top: 1rem;
+      background-color: #f45c96;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }

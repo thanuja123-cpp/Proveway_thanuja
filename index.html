@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Boxes</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>YAY! It's BOGO</h2>
+
+    <label class="option selected" id="option1">
+      <input type="radio" name="unit" value="1" checked />
+      <div class="content">
+        <div>
+          <strong>1 Unit</strong> <span class="badge">10% Off</span>
+          <div>Standard Price</div>
+        </div>
+        <div>
+          <span class="price">$10.00 USD</span>
+          <span class="strike">$24.00 USD</span>
+        </div>
+      </div>
+      <div class="selectors" id="selectors1">
+        <div class="row">
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Red</option></select>
+        </div>
+        <div class="row">
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Red</option></select>
+        </div>
+      </div>
+    </label>
+
+    <label class="option" id="option2">
+      <input type="radio" name="unit" value="2" />
+      <div class="content">
+        <div>
+          <strong>2 Unit</strong> <span class="badge">20% Off</span>
+        </div>
+        <div>
+          <span class="price">$18.00 USD</span>
+          <span class="strike">$24.00 USD</span>
+        </div>
+      </div>
+      <div class="selectors hidden" id="selectors2">
+        <div class="row">
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Red</option></select>
+        </div>
+        <div class="row">
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Red</option></select>
+        </div>
+      </div>
+    </label>
+
+    <label class="option" id="option3">
+      <input type="radio" name="unit" value="3" />
+      <div class="content">
+        <div>
+          <strong>3 Unit</strong> <span class="badge">30% Off</span>
+        </div>
+        <div>
+          <span class="price">$24.00 USD</span>
+          <span class="strike">$24.00 USD</span>
+        </div>
+      </div>
+      <div class="selectors hidden" id="selectors3">
+        <div class="row">
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Red</option></select>
+        </div>
+        <div class="row">
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>White</option><option>Red</option></select>
+        </div>
+      </div>
+    </label>
+
+    <div class="total">Total: <span id="total">$10.00 USD</span></div>
+    <button class="add-to-cart">+ Add to Cart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
